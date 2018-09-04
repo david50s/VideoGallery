@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>FancyBox Sandbox</title>
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" />
+    <link rel="stylesheet" type="text/css" href="includes/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-thumbs.css" />
+    <script type="text/javascript" src="includes/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="script/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="includes/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-thumbs.js"></script>
+    <script type="text/javascript" src="script/myscript.js"></script>
+</head>
+<body>
+<a class="fancybox-thumb" rel="group1" href="gallery/38hurricane/Slide1.PNG"><img src="gallery/38hurricane/smSlide1.PNG" alt=""/></a>
+<a class="fancybox-thumb" rel="group2" href="gallery/btwwii/Slide1.PNG">no image</a>
+<div id="galleries" style="display: none;" >
+<a class="fancybox-thumb" rel="group1" href="gallery/38hurricane/Slide1.PNG"><img src="gallery/38hurricane/Slide1.PNG" alt=""/></a>
+<a class="fancybox-thumb" rel="group1" href="gallery/38hurricane/Slide2.PNG"><img src="gallery/38hurricane/Slide2.PNG" alt=""/></a>
+<a class="fancybox-thumb" rel="group1" href="gallery/38hurricane/Slide3.PNG"><img src="gallery/38hurricane/Slide3.PNG" alt=""/></a>
+<a class="fancybox-thumb" rel="group1" href="gallery/38hurricane/Slide4.PNG"><img src="gallery/38hurricane/Slide4.PNG" alt=""/></a>
+<a class="fancybox-thumb" rel="group1" href="gallery/38hurricane/Slide5.PNG"><img src="gallery/38hurricane/Slide5.PNG" alt=""/></a>
+<a class="fancybox-thumb" rel="group1" href="gallery/38hurricane/Slide6.PNG"><img src="gallery/38hurricane/Slide6.PNG" alt=""/></a>
+<a class="fancybox-thumb" rel="group1" href="gallery/38hurricane/Slide7.PNG"><img src="gallery/38hurricane/Slide7.PNG" alt=""/></a>
+<a class="fancybox-thumb" rel="group1" href="gallery/38hurricane/Slide8.PNG"><img src="gallery/38hurricane/Slide8.PNG" alt=""/></a>
+
+<a class="fancybox-thumb" rel="group2" href="gallery/btwwii/Slide1.PNG"><img src="gallery/btwwii/Slide1.PNG" alt=""/></a>
+<a class="fancybox-thumb" rel="group2" href="gallery/btwwii/Slide2.PNG"><img src="gallery/btwwii/Slide2.PNG" alt=""/></a>
+<a class="fancybox-thumb" rel="group2" href="gallery/btwwii/Slide3.PNG"><img src="gallery/btwwii/Slide3.PNG" alt=""/></a>
+<a class="fancybox-thumb" rel="group2" href="gallery/btwwii/Slide4.PNG"><img src="gallery/btwwii/Slide4.PNG" alt=""/></a>
+<a class="fancybox-thumb" rel="group2" href="gallery/btwwii/Slide5.PNG"><img src="gallery/btwwii/Slide5.PNG" alt=""/></a>
+<a class="fancybox-thumb" rel="group2" href="gallery/btwwii/Slide6.PNG"><img src="gallery/btwwii/Slide6.PNG" alt=""/></a>
+<a class="fancybox-thumb" rel="group2" href="gallery/btwwii/Slide7.PNG"><img src="gallery/btwwii/Slide7.PNG" alt=""/></a>
+<a class="fancybox-thumb" rel="group2" href="gallery/btwwii/Slide8.PNG"><img src="gallery/btwwii/Slide8.PNG" alt=""/></a>
+</div>
+
+</body>
+<script>
+
+    $(document).ready(function() {
+        $(".fancybox-thumb").fancybox({
+            prevEffect	: 'none',
+            nextEffect	: 'none',
+            helpers	: {
+                title	: {
+                    type: 'outside'
+                },
+                thumbs	: {
+                    width	: 50,
+                    height	: 50
+                }
+            }
+        });
+    });
+</script>
+</html>

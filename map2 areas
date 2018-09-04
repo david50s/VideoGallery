@@ -1,0 +1,23 @@
+<!-- Beginning of CoffeeCup Image Map -->
+<img src="map2.png" usemap="#map2" border=0>
+<map name="map2">
+  <area name="Island Scoop" onClick="getStuff(0)" shape="rect" coords="99,117,335,296" nohref  alt="" title="">
+  <area name="the shack" onClick="getStuff(1)" shape="rect" coords="61,333,319,481" nohref  alt="" title="">
+  <area name="Aces Pizza" onClick="getStuff(2)" shape="rect" coords="279,783,453,1019" nohref  alt="" title="">
+  <area name="village hearth" onClick="getStuff(3)" shape="rect" coords="449,326,645,478" nohref  alt="" title="">
+  <area name="chipmist charlies" onClick="getStuff(4)" shape="rect" coords="590,128,869,382" nohref  alt="`" title="`">
+  <area name="narragansett cafe" onClick="getStuff(5)" shape="rect" coords="533,758,789,949" nohref  alt="" title="">
+  <area name="freddies house of pizza" onClick="getStuff(6)" shape="rect" coords="873,116,1074,340" nohref  alt="" title="">
+  <area name="slice of onClick="getStuff(7)" heaven" shape="rect" coords="979,280,1199,462" nohref  alt="" title="">
+  <area name="simpatico" onClick="getStuff(8)" shape="rect" coords="797,604,1089,800" nohref  alt="" title="">
+  <area name="bay voyager" onClick="getStuff(9)" shape="rect" coords="1079,45,1364,265" nohref  alt="" title="">
+  <area name="jamestown fish" onClick="getStuff(10)" shape="rect" coords="1210,228,1402,412" nohref  alt="" title="">
+  <area name="east ferry deli" onClick="getStuff(11)" shape="rect" coords="994,763,1262,1012" nohref  alt="" title="">
+  <area name="McQuades" onClick="getStuff(12)" shape="rect" coords="178,518,287,604" nohref  alt="" title="">
+  <area name="spinnakers cafe" onClick="getStuff(13)" shape="rect" coords="1310,783,1579,939" nohref  alt="" title="">
+  <area name="Golf Course" onClick="getStuff(14)" shape="rect" coords="29,696,177,794" nohref  alt="" title="">
+  <area name="farmers market" onClick="getStuff(15)" shape="rect" coords="29,805,165,993" nohref  alt="" title="">
+  <area name="j-22" onClick="getStuff(16)" shape="rect" coords="440,528,592,678" nohref  alt="" title="">
+</map>
+<!-- End of CoffeeCup Image Map -->
+

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--  Written by Chris Converse for Lynda.com  -->
+		<meta charset="UTF-8">
+		<title>Video Gallery</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+		<link rel="stylesheet" type="text/css" href="css/mystyle.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" />
+		<!--<link rel="stylesheet" type="text/css" href="includes/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-thumbs.css" />-->
+		<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-buttons.css" />
+		<script type="text/javascript" src="script/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="script/jquery.fancybox.js"></script>
+		<script type="text/javascript" src="includes/jquery.fancybox-1.3.4/fancybox/jquery.easing-1.3.pack.js"></script>
+		<script type="text/javascript" src="includes/jquery.fancybox-1.3.4/fancybox/jquery.fancybox.pack.js"></script>
+		<script type="text/javascript" src="includes/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-thumbs.js"></script>
+		<script type="text/javascript" src="script/jquery.fancybox-buttons.js"></script>
+		<script type="text/javascript" src="includes/jquery.shuffle.modernizr.min.js"></script>
+		<script type="text/javascript" src="includes/jquery.shuffle.min.js"></script>
+
+		<script type="text/javascript" src="includes/video_galleryShuffle.js"></script>
+		<!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/video_gallery_ie.css"/>
+        <![endif]-->
+	</head>
+	<body>
+	<div id="introvid">
+		<video autoplay="autoplay" loop width="640" height="480" >
+			<source src="video/videocollage.mp4"  type="video/mp4" />
+		</video>
+	</div>
+	<div id="filterHolder">
+		<ul id="filter">
+		<li> <a class="active" href="#" data-group="all">Show All</a></li>
+		<li> <a href="#"  data-group="videos">All Videos</a></li>
+		<li> <a href="#"  data-group="slides">All Slide Shows</a></li>
+		<li> <a href="#"  data-group="new">New Additions</a></li>
+		<li> <a href="#"  data-group="lighthouse">Lighthouses</a></li>
+		<li> <a href="#"  data-group="keepers">Lighthouse Keepers</a></li>
+		<li> <a href="#"  data-group="beavertail">Beavertail</a></li>
+		<li> <a href="#"  data-group="wwii">World War II</a></li>
+		<li> <a href="#"  data-group="storms">Storms & Rough Seas</a></li>
+		<li> <a href="#"  data-group="ships">Ships & Pilots</a></li>
+		<li> <a href="#"  data-group="ohp">The Tall Ship Oliver Hazard Perry</a></li>
+		</ul>
+	</div>
+		
+		<div  class="video_gallery_container">
+			<div id="grid">
+			<div class="item" data-groups='["lighthouse","videos"]'><a class="videoLink" videowidth="640" videoheight="480" videofile="angelsgate"  videocaption="Angels Gate - 1899" ></a></div>
+			<div class="item" data-groups='["lighthouse","videos"]'><a class="videoLink" videowidth="640" videoheight="480" videofile="Americas_First_LIghthouse5" videocaption="Americas First Lighthouse" ></a></div>
+			<div class="item" data-groups='["storms","videos"]'><a class="videoLink" videowidth="640" videoheight="480" videofile="brittanystorms" videocaption="Storms off the Brittany Coast"></a></div>
+			<div class="item" data-groups='["lighthouse","videos"]'><a class="videoLink" videowidth="640" videoheight="480"  videofile="capehatteraslight" videocaption="Moving the Cape Hatteris Light"></a></div>
+			<div class="item" data-groups='["lighthouse","videos"]'><a class="videoLink" videowidth="640" videoheight="480" videofile="capeblancolens" videocaption="Cape Blanco Fresnel Lens"></a></div>
+			<div class="item" data-groups='["videos"]'><a class="videoLink" videowidth="640" videoheight="480" videofile="fullmoon"  videocaption="Full Moon Silhouette" ></a></div>
+			<div class="item" data-groups='["storms","videos"]'><a class="videoLink" videowidth="640" videoheight="480" videofile="roughseas"  videocaption="Returning Fishing Boats in Rough Seas" ></a></div>
+			<div class="item" data-groups='["keepers","videos"]'><a class="videoLink" videowidth="640" videoheight="480" videofile="lighthousekeeper"  videocaption="Lighthouse Keepers" ></a></div>
+			<div class="item" data-groups='["lighthouse","beavertail","videos"]'><a class="videoLink" videowidth="640" videoheight="480" videofile="monglighthouse"  videocaption="Beavertail Lighthouse Model" ></a></div>
+			<div class="item" data-groups='["lighthouse","beavertail","videos"]'><a class="videoLink" videowidth="640" videoheight="480" videofile="nkphotostory"  videocaption="North Kingston kids Lighthouse Models" ></a></div>
+			<div class="item" data-groups='["ohp","ships","videos"]'><a class="videoLink" videowidth="640" videoheight="480" videofile="ohplaunch"  videocaption="Launch of the Oliver Hazard Perry" ></a></div>
+			<div class="item" data-groups='["ohp","ships","videos"]'><a class="videoLink" videowidth="640" videoheight="480" videofile="ohptallship"  videocaption="Tall Ship Oliver Hazard Perry" ></a></div>
+			<div class="item" data-groups='["lighthouse","beavertail","videos"]'><a class="videoLink" videowidth="640" videoheight="480" videofile="paintbeavertail"  videocaption="Paint Beavertail Lighthouse" ></a></div>
+			<div class="item" data-groups='["lighthouse","videos"]'><a class="videoLink" videowidth="640" videoheight="480" videofile="pigeonpoint"  videocaption="The Pigeon Point Fresnel Lens" ></a></div>
+			<div class="item" data-groups='["lighthouse","beavertail","videos"]'><a class="videoLink" videowidth="640" videoheight="480" videofile="beavertailstories"  videocaption="Stories from Beavertail Lighthouse" ></a></div>
+			<div class="item" data-groups='["beavertail","wwii","videos"]'><a class="videoLink" videowidth="640" videoheight="480" videofile="vkwwii"  videocaption="Beavertail in World War II" ></a></div>
+			<div class="item" data-groups='["ships","wwii","videos"]'><a class="videoLink" videowidth="640" videoheight="480" videofile="u853"  videocaption="The Last Battle of World War II" ></a></div>
+			<div class="item" data-groups='["keepers","new","videos"]'><a class="videoLink" videowidth="640" videoheight="480" videofile="idalewis"  videocaption="Ida Lewis" ></a></div>
+			<div class="item" data-groups='["storms","slides"]'><a class="fancybox-button" galleryfile="38hurricane"  gallerycaption="The Great Hurricane of 1938" rel="group1" href="gallery/38hurricane/Slide1.PNG"> ></a></div>
+			<div class="item" data-groups='["beavertail","slides"]'><a class="fancybox-button" galleryfile="btstatepark" gallerycaption="Bearvertail State Park" rel="group2" href="gallery/btstatepark/Slide1.PNG"></a></div>
+			<div class="item" data-groups='["beavertail","wwii","slides"]'><a class="fancybox-button" galleryfile="btwwii" gallerycaption="Bearvertail during World War II" rel="group3" href="gallery/btwwii/Slide1.PNG"></a></div>
+			<div class="item" data-groups='["ships","slides"]'><a class="fancybox-button" galleryfile="comves" gallerycaption="Comercial Vessels on Narragansett Bay" rel="group4" href="gallery/comves/Slide1.PNG"></a></div>
+			<div class="item" data-groups='["beavertail","slides"]'><a class="fancybox-button" galleryfile="docent" gallerycaption="Docents at the Beavertail Lighthouse" rel="group5" href="gallery/docent/Slide1.PNG"></a></div>
+			<div class="item" data-groups='["beavertail","slides"]'><a class="fancybox-button" galleryfile="fogsig" gallerycaption="Fog Signals at Beavertail" rel="group6" href="gallery/fogsig/Slide1.PNG"></a></div>
+			<div class="item" data-groups='["ships","slides"]'><a class="fancybox-button" galleryfile="pilots" gallerycaption="Ship Pilots on RI Waters" rel="group7" href="gallery/pilots/Slide1.PNG"></a></div>
+			<div class="item" data-groups='["beavertail","slides"]'><a class="fancybox-button" galleryfile="restoration" gallerycaption="Beavertail Light Station Restoration" rel="group8" href="gallery/restoration/Slide1.PNG"></a></div>
+			<div class="item" data-groups='["ships","storms","slides"]'><a class="fancybox-button" galleryfile="shipwrecks" gallerycaption="Shipwrecks in Narragansett Bay" rel="group9" href="gallery/shipwrecks/Slide1.PNG"></a></div>
+			<div class="item" data-groups='["wwii","slides"]'><a class="fancybox-button" galleryfile="u853" gallerycaption="U-853" rel="group10" href="gallery/u853/Slide1.PNG"></a></div>
+			<div class="item" data-groups='["storms","lighthouse","slides"]'><a class="fancybox-button" galleryfile="whalerock" gallerycaption="Whale Rock Lighthouse" rel="group11" href="gallery/whalerock/Slide1.PNG"></a></div>
+			<div class="item" data-groups='["beavertail","slides"]'><a class="fancybox-button" galleryfile="fogsigrest" gallerycaption="Beavertail Fog Signal Restoration" rel="group12" href="gallery/fogsigrest/Slide1.PNG"></a></div>
+			<div class="item" data-groups='["beavertail","ships","new","storms","slides"]'><a class="fancybox-button" galleryfile="hfpayton" gallerycaption="Harvey F Payton Shipwreck Stones" rel="group13" href="gallery/hfpayton/Slide1.PNG"></a></div>
+
+			<div class="clear_both"></div>
+			</div>
+		</div>
+		<!-- Hidden DIV container for video overlay code -->
+		<div style="display: none;">
+			<div id="videoPlayer"></div>
+		</div>
+		<div style="display: none;">
+		<div id="galleries" >
+			<div id="callGalleries"></div>
+
+			<a class="fancybox-button" rel="group1" href="gallery/38hurricane/Slide2.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group1" href="gallery/38hurricane/Slide3.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group1" href="gallery/38hurricane/Slide4.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group1" href="gallery/38hurricane/Slide5.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group1" href="gallery/38hurricane/Slide6.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group1" href="gallery/38hurricane/Slide7.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group1" href="gallery/38hurricane/Slide8.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group1" href="gallery/38hurricane/Slide9.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group1" href="gallery/38hurricane/Slide10.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group1" href="gallery/38hurricane/Slide11.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group1" href="gallery/38hurricane/Slide12.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group1" href="gallery/38hurricane/Slide13.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group1" href="gallery/38hurricane/Slide14.PNG"> alt=""/></a>
+
+			<a class="fancybox-button" rel="group2" href="gallery/btstatepark/Slide2.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group2" href="gallery/btstatepark/Slide3.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group2" href="gallery/btstatepark/Slide4.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group2" href="gallery/btstatepark/Slide5.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group2" href="gallery/btstatepark/Slide6.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group2" href="gallery/btstatepark/Slide7.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group2" href="gallery/btstatepark/Slide8.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group2" href="gallery/btstatepark/Slide9.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group2" href="gallery/btstatepark/Slide10.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group2" href="gallery/btstatepark/Slide11.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group2" href="gallery/btstatepark/Slide12.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group2" href="gallery/btstatepark/Slide13.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group2" href="gallery/btstatepark/Slide14.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group2" href="gallery/btstatepark/Slide15.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group2" href="gallery/btstatepark/Slide16.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group2" href="gallery/btstatepark/Slide17.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group2" href="gallery/btstatepark/Slide18.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group2" href="gallery/btstatepark/Slide19.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group2" href="gallery/btstatepark/Slide20.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group2" href="gallery/btstatepark/Slide21.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group2" href="gallery/btstatepark/Slide22.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group2" href="gallery/btstatepark/Slide23.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group2" href="gallery/btstatepark/Slide24.PNG"> alt=""/></a>
+
+			<a class="fancybox-button" rel="group3" href="gallery/btwwii/Slide2.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group3" href="gallery/btwwii/Slide3.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group3" href="gallery/btwwii/Slide4.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group3" href="gallery/btwwii/Slide5.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group3" href="gallery/btwwii/Slide6.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group3" href="gallery/btwwii/Slide7.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group3" href="gallery/btwwii/Slide8.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group3" href="gallery/btwwii/Slide9.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group3" href="gallery/btwwii/Slide10.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group3" href="gallery/btwwii/Slide11.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group3" href="gallery/btwwii/Slide12.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group3" href="gallery/btwwii/Slide13.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group3" href="gallery/btwwii/Slide14.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group3" href="gallery/btwwii/Slide15.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group3" href="gallery/btwwii/Slide16.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group3" href="gallery/btwwii/Slide17.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group3" href="gallery/btwwii/Slide18.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group3" href="gallery/btwwii/Slide19.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group3" href="gallery/btwwii/Slide20.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group3" href="gallery/btwwii/Slide21.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group3" href="gallery/btwwii/Slide22.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group3" href="gallery/btwwii/Slide23.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group3" href="gallery/btwwii/Slide24.PNG"> alt=""/></a>
+
+			<a class="fancybox-button" rel="group4" href="gallery/comves/Slide2.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group4" href="gallery/comves/Slide3.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group4" href="gallery/comves/Slide4.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group4" href="gallery/comves/Slide5.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group4" href="gallery/comves/Slide6.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group4" href="gallery/comves/Slide7.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group4" href="gallery/comves/Slide8.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group4" href="gallery/comves/Slide9.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group4" href="gallery/comves/Slide10.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group4" href="gallery/comves/Slide11.PNG"> alt=""/></a>
+
+			<a class="fancybox-button" rel="group5" href="gallery/docent/Slide2.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group5" href="gallery/docent/Slide3.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group5" href="gallery/docent/Slide4.PNG">  alt=""/></a>
+
+			<a class="fancybox-button" rel="group6" href="gallery/fogsig/Slide2.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group6" href="gallery/fogsig/Slide3.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group6" href="gallery/fogsig/Slide4.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group6" href="gallery/fogsig/Slide5.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group6" href="gallery/fogsig/Slide6.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group6" href="gallery/fogsig/Slide7.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group6" href="gallery/fogsig/Slide8.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group6" href="gallery/fogsig/Slide9.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group6" href="gallery/fogsig/Slide10.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group6" href="gallery/fogsig/Slide11.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group6" href="gallery/fogsig/Slide12.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group6" href="gallery/fogsig/Slide13.PNG"> alt=""/></a>
+
+			<a class="fancybox-button" rel="group7" href="gallery/pilots/Slide2.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group7" href="gallery/pilots/Slide3.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group7" href="gallery/pilots/Slide4.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group7" href="gallery/pilots/Slide5.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group7" href="gallery/pilots/Slide6.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group7" href="gallery/pilots/Slide7.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group7" href="gallery/pilots/Slide8.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group7" href="gallery/pilots/Slide9.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group7" href="gallery/pilots/Slide10.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group7" href="gallery/pilots/Slide11.PNG"> alt=""/></a>
+
+			<a class="fancybox-button" rel="group8" href="gallery/restoration/Slide2.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group8" href="gallery/restoration/Slide3.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group8" href="gallery/restoration/Slide4.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group8" href="gallery/restoration/Slide5.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group8" href="gallery/restoration/Slide6.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group8" href="gallery/restoration/Slide7.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group8" href="gallery/restoration/Slide8.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group8" href="gallery/restoration/Slide9.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group8" href="gallery/restoration/Slide10.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group8" href="gallery/restoration/Slide11.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group8" href="gallery/restoration/Slide12.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group8" href="gallery/restoration/Slide13.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group8" href="gallery/restoration/Slide14.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group8" href="gallery/restoration/Slide15.PNG"> alt=""/></a>
+
+			<a class="fancybox-button" rel="group9" href="gallery/shipwrecks/Slide2.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group9" href="gallery/shipwrecks/Slide3.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group9" href="gallery/shipwrecks/Slide4.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group9" href="gallery/shipwrecks/Slide5.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group9" href="gallery/shipwrecks/Slide6.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group9" href="gallery/shipwrecks/Slide7.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group9" href="gallery/shipwrecks/Slide8.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group9" href="gallery/shipwrecks/Slide9.PNG">  alt=""/></a>
+
+			<a class="fancybox-button" rel="group10" href="gallery/u853/Slide2.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group10" href="gallery/u853/Slide3.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group10" href="gallery/u853/Slide4.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group10" href="gallery/u853/Slide5.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group10" href="gallery/u853/Slide6.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group10" href="gallery/u853/Slide7.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group10" href="gallery/u853/Slide8.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group10" href="gallery/u853/Slide9.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group10" href="gallery/u853/Slide10.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group10" href="gallery/u853/Slide11.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group10" href="gallery/u853/Slide12.PNG"> alt=""/></a>
+
+			<a class="fancybox-button" rel="group11" href="gallery/whalerock/Slide2.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group11" href="gallery/whalerock/Slide3.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group11" href="gallery/whalerock/Slide4.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group11" href="gallery/whalerock/Slide5.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group11" href="gallery/whalerock/Slide6.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group11" href="gallery/whalerock/Slide7.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group11" href="gallery/whalerock/Slide8.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group11" href="gallery/whalerock/Slide9.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group11" href="gallery/whalerock/Slide10.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group11" href="gallery/whalerock/Slide11.PNG"> alt=""/></a>
+
+			<a class="fancybox-button" rel="group12" href="gallery/fogsigrest/Slide2.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group12" href="gallery/fogsigrest/Slide3.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group12" href="gallery/fogsigrest/Slide4.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group12" href="gallery/fogsigrest/Slide5.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group12" href="gallery/fogsigrest/Slide6.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group12" href="gallery/fogsigrest/Slide7.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group12" href="gallery/fogsigrest/Slide8.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group12" href="gallery/fogsigrest/Slide9.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group12" href="gallery/fogsigrest/Slide10.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group12" href="gallery/fogsigrest/Slide11.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group12" href="gallery/fogsigrest/Slide12.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group12" href="gallery/fogsigrest/Slide13.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group12" href="gallery/fogsigrest/Slide14.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group12" href="gallery/fogsigrest/Slide15.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group12" href="gallery/fogsigrest/Slide16.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group12" href="gallery/fogsigrest/Slide17.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group12" href="gallery/fogsigrest/Slide18.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group12" href="gallery/fogsigrest/Slide19.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group12" href="gallery/fogsigrest/Slide20.PNG"> alt=""/></a>
+
+			<a class="fancybox-button" rel="group13" href="gallery/hfpayton/Slide2.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group13" href="gallery/hfpayton/Slide3.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group13" href="gallery/hfpayton/Slide4.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group13" href="gallery/hfpayton/Slide5.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group13" href="gallery/hfpayton/Slide6.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group13" href="gallery/hfpayton/Slide7.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group13" href="gallery/hfpayton/Slide8.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group13" href="gallery/hfpayton/Slide9.PNG">  alt=""/></a>
+			<a class="fancybox-button" rel="group13" href="gallery/hfpayton/Slide10.PNG"> alt=""/></a>
+			<a class="fancybox-button" rel="group13" href="gallery/hfpayton/Slide11.PNG"> alt=""/></a>
+
+
+		</div>
+		</div>
+	
+	</body>
+</html>
